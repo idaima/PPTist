@@ -9,7 +9,8 @@ export default {
   },
 
   getFileData(filename: string): Promise<any> {
-    return axios.get(`${ASSET_URL}/data/${filename}.json`)
+    // return axios.get(`${ASSET_URL}/data/${filename}.json`)
+    return this.getMockData(filename)
   },
 
   AIPPT_Outline(content: string, language: string) {
